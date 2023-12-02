@@ -6,6 +6,7 @@
     <RootNamespace>Advent_of_Code_2023</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Joymg.AoC23.Day2_2</StartupObject>
   </PropertyGroup>
 
 </Project>

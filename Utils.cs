@@ -8,22 +8,24 @@ namespace Joymg.AoC23
             Test,
             First,
             Second, 
-            Queso
+            Queso,
+            Lucia
         }
 
-        private const string folderPath = "D:\\OtherProjects\\Advent-of-Code-2023\\AdventOfCode2023\\Day 1_Trebuchet_AoC_23\\Inputs\\";
 
         private const string inputTest = "input_test";
         private const string input1 = "input_1";
         private const string input2 = "input_2";
         private const string inputQueso = "input_queso";
+        private const string inputLucia = "input_lucia";
 
 
-        public static string[] ReadFile(InputType type)
+        public static string[] ReadFile(string folderPath, InputType type)
         {
-            string fullPath = GetPath(type);
+            string inputPath = GetPath(type);
 
-            return File.ReadAllLines(fullPath);
+
+            return File.ReadAllLines(folderPath + inputPath);
         }
 
         private static string GetPath(InputType type)
@@ -43,8 +45,11 @@ namespace Joymg.AoC23
                 case InputType.Queso:
                     selectedInput = inputQueso;
                     break;
+                case InputType.Lucia:
+                    selectedInput = inputLucia;
+                    break;
             }
-            return folderPath + selectedInput + ".txt";
+            return  selectedInput + ".txt";
         }
     }
 }

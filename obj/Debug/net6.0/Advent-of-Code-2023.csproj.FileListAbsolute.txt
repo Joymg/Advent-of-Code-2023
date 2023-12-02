@@ -1,0 +1,14 @@
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.AssemblyInfoInputs.cache
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.AssemblyInfo.cs
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.csproj.CoreCompileInputs.cache
+C:\OtherProjects\Advent-of-Code-2023\bin\Debug\net6.0\Advent-of-Code-2023.exe
+C:\OtherProjects\Advent-of-Code-2023\bin\Debug\net6.0\Advent-of-Code-2023.deps.json
+C:\OtherProjects\Advent-of-Code-2023\bin\Debug\net6.0\Advent-of-Code-2023.runtimeconfig.json
+C:\OtherProjects\Advent-of-Code-2023\bin\Debug\net6.0\Advent-of-Code-2023.dll
+C:\OtherProjects\Advent-of-Code-2023\bin\Debug\net6.0\Advent-of-Code-2023.pdb
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.dll
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\refint\Advent-of-Code-2023.dll
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.pdb
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\Advent-of-Code-2023.genruntimeconfig.cache
+C:\OtherProjects\Advent-of-Code-2023\obj\Debug\net6.0\ref\Advent-of-Code-2023.dll

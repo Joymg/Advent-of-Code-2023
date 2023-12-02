@@ -6,6 +6,7 @@ namespace Joymg.AoC23
 {
     internal class Day1_2
     {
+        const string inputFolderPath = "C:\\OtherProjects\\Advent-of-Code-2023\\Day1_Trebuchet_AoC_23\\Input\\";
         static string[] inputs;
         static int calibrationValuesSum = 0;
 
@@ -13,7 +14,7 @@ namespace Joymg.AoC23
 
         static void Main(string[] args)
         {
-            inputs = ReadFile(InputType.Second);
+            inputs = ReadFile(inputFolderPath, InputType.Second);
 
             for (int i = 0; i < inputs.Length; i++)
             {
@@ -59,7 +60,7 @@ namespace Joymg.AoC23
             string substring;
             StringBuilder sb = new StringBuilder();
             sb.Append(line);
-            int removedCharacters = 0;
+            int addedCharacters = 0;
 
             for (int i = 0; i < line.Length; i++)
             {
@@ -68,9 +69,9 @@ namespace Joymg.AoC23
                     substring = line.Substring(i);
                     if (substring.StartsWith(spelledNumbers[j]))
                     {
-                        sb.Insert(i + removedCharacters+1, j + 1);
+                        sb.Insert(i + addedCharacters + 1, j + 1);
 
-                        removedCharacters ++;
+                        addedCharacters++;
                         break;
                     }
                 }
