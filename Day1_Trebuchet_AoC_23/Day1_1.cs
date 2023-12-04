@@ -1,7 +1,7 @@
 ﻿
 using static Joymg.AoC23.Utils;
 
-namespace Joymg.AoC23
+namespace Joymg.AoC23.Day1
 {
     public class Day1_1
     {

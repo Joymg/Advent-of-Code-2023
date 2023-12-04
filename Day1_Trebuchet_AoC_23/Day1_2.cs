@@ -2,7 +2,7 @@
 using System.Text;
 using static Joymg.AoC23.Utils;
 
-namespace Joymg.AoC23
+namespace Joymg.AoC23.Day1
 {
     internal class Day1_2
     {
