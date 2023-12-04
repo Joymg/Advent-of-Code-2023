@@ -8,7 +8,7 @@ namespace Joymg.AoC23.Day3
     public class Day3_2
     {
         static string[] inputs;
-        const string inputFolderPath = "C:\\OtherProjects\\Advent-of-Code-2023\\Day3_GearRatios_AoC_23\\Input\\";
+        const string inputFolderPath = "..\\..\\..\\Day3_GearRatios_AoC_23\\Input\\";
         static int result;
 
         static void Main(string[] args)

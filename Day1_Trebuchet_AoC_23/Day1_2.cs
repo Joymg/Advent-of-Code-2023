@@ -6,7 +6,7 @@ namespace Joymg.AoC23.Day1
 {
     internal class Day1_2
     {
-        const string inputFolderPath = "C:\\OtherProjects\\Advent-of-Code-2023\\Day1_Trebuchet_AoC_23\\Input\\";
+        const string inputFolderPath = "..\\..\\..\\Day1_Trebuchet_AoC_23\\Input\\";
         static string[] inputs;
         static int calibrationValuesSum = 0;
 

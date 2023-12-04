@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Josem\\.nuget\\packages\\": {}
+    "C:\\Users\\Joymg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OtherProjects\\Advent-of-Code-2023\\Advent-of-Code-2023.csproj",
+      "projectUniqueName": "D:\\OtherProjects\\Advent-of-Code-2023\\Advent-of-Code-2023.csproj",
       "projectName": "Advent-of-Code-2023",
-      "projectPath": "C:\\OtherProjects\\Advent-of-Code-2023\\Advent-of-Code-2023.csproj",
-      "packagesPath": "C:\\Users\\Josem\\.nuget\\packages\\",
-      "outputPath": "C:\\OtherProjects\\Advent-of-Code-2023\\obj\\",
+      "projectPath": "D:\\OtherProjects\\Advent-of-Code-2023\\Advent-of-Code-2023.csproj",
+      "packagesPath": "C:\\Users\\Joymg\\.nuget\\packages\\",
+      "outputPath": "D:\\OtherProjects\\Advent-of-Code-2023\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joymg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

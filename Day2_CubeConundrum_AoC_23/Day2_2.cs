@@ -6,7 +6,7 @@ namespace Joymg.AoC23.Day2
     {
 
         static string[] inputs;
-        const string inputFolderPath = "C:\\OtherProjects\\Advent-of-Code-2023\\Day2_CubeConundrum_AoC_23\\Input\\";
+        const string inputFolderPath = "..\\..\\..\\Day2_CubeConundrum_AoC_23\\Input\\";
 
 
         private static int red = 12;
