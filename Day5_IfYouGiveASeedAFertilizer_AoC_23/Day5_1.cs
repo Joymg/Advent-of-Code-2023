@@ -1,4 +1,5 @@
-﻿using static Joymg.AoC23.Utils;
+﻿using System.Diagnostics;
+using static Joymg.AoC23.Utils;
 
 namespace Joymg.AoC23.Day5
 {
@@ -10,12 +11,17 @@ namespace Joymg.AoC23.Day5
 
         static void Main(string[] args)
         {
+
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             long[] seeds = RemoveHeader(inputs[0]).Split(' ').Select(long.Parse).ToArray();
             result = CalculateMinimumLocation(seeds,inputs);
 
             Console.WriteLine(result);
+
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
         }
 

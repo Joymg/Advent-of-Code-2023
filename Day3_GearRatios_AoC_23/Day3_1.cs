@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics;
+using System.Numerics;
 using System.Text;
 using static Joymg.AoC23.Utils;
 
@@ -12,12 +13,15 @@ namespace Joymg.AoC23.Day3
 
         static void Main(string[] args)
         {
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             CalculateGearRatio(inputs);
 
             Console.WriteLine(result);
 
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
         }
 
         public static void CalculateGearRatio(string[] inputs)

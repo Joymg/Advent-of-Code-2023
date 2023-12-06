@@ -1,4 +1,5 @@
-﻿using static Joymg.AoC23.Utils;
+﻿using System.Diagnostics;
+using static Joymg.AoC23.Utils;
 
 namespace Joymg.AoC23.Day2
 {
@@ -20,6 +21,7 @@ namespace Joymg.AoC23.Day2
 
         static void Main(string[] args)
         {
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             for (int i = 0; i < inputs.Length; i++)
@@ -28,6 +30,10 @@ namespace Joymg.AoC23.Day2
             }
 
             Console.WriteLine(result);
+
+
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
         }
 

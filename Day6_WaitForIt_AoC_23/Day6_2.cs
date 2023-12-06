@@ -95,10 +95,10 @@ namespace Joymg.AoC23.Day6
             long c = record;
             long delta = b * b - 4 * a * c;
             float squareRoot = MathF.Sqrt(delta);
-            float x1 = (b - squareRoot) / 2 * a;
-            float x2 = (b + squareRoot) / 2 * a;
+            float x1 = MathF.Floor((-b - squareRoot) / 2 * a);
+            float x2 = MathF.Ceiling((-b + squareRoot) / 2 * a);
 
-            return (int)(x2 - x1);
+            return (int)(x2 - x1 - 1);
 
         }
 

@@ -2,6 +2,7 @@
 using static Joymg.AoC23.Day3.Day3_1;
 using System.Text;
 using System.Numerics;
+using System.Diagnostics;
 
 namespace Joymg.AoC23.Day3
 {
@@ -13,11 +14,16 @@ namespace Joymg.AoC23.Day3
 
         static void Main(string[] args)
         {
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             FindValidGears(inputs);
 
             Console.WriteLine(result);
+
+
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
         }
 

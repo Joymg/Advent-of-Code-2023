@@ -1,10 +1,11 @@
 ﻿
 using static Joymg.AoC23.Utils;
 using static Joymg.AoC23.Day4.Day4_1;
+using System.Diagnostics;
 
 namespace Joymg.AoC23.Day4
 {
-    internal class Day5_2
+    internal class Day4_2
     {
         static string[] inputs;
         const string inputFolderPath = "..\\..\\..\\Day4_Scratchcards_AoC_23\\Input\\";
@@ -13,6 +14,7 @@ namespace Joymg.AoC23.Day4
 
         static void Main(string[] args)
         {
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             CountOfEachCard = new int[inputs.Length];
@@ -33,6 +35,11 @@ namespace Joymg.AoC23.Day4
             }
 
             Console.WriteLine(result);
+
+
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+
 
         }
 

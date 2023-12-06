@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using System.Text;
 using static Joymg.AoC23.Utils;
 
@@ -14,7 +15,8 @@ namespace Joymg.AoC23.Day1
 
         static void Main(string[] args)
         {
-            inputs = ReadFile(inputFolderPath, InputType.Second);
+            Stopwatch sw = Stopwatch.StartNew();
+            inputs = ReadFile(inputFolderPath, InputType.First);
 
             for (int i = 0; i < inputs.Length; i++)
             {
@@ -23,6 +25,8 @@ namespace Joymg.AoC23.Day1
 
 
             Console.WriteLine(calibrationValuesSum);
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
         }
 
 

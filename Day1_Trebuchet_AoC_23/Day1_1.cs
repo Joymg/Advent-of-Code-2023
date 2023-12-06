@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using static Joymg.AoC23.Utils;
 
 namespace Joymg.AoC23.Day1
@@ -13,6 +14,7 @@ namespace Joymg.AoC23.Day1
         {
             // Display the number of command line arguments.
 
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath,InputType.First);
 
             for (int i = 0; i < inputs.Length; i++)
@@ -23,6 +25,8 @@ namespace Joymg.AoC23.Day1
             int result = SumCalibrationValues();
 
             Console.WriteLine(result);
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
         }
 
         private static int SumCalibrationValues()

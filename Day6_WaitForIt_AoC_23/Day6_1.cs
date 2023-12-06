@@ -1,5 +1,7 @@
 ﻿
+using System.Diagnostics;
 using static Joymg.AoC23.Utils;
+using static Joymg.AoC23.Day6.Day6_2;
 
 namespace Joymg.AoC23.Day6
 {
@@ -11,13 +13,23 @@ namespace Joymg.AoC23.Day6
 
         static void Main(string[] args)
         {
+
+            Stopwatch sw = Stopwatch.StartNew();
             inputs = ReadFile(inputFolderPath, InputType.First);
 
             long[] times, records;
             ParseTimeAndRecords(inputs, out times, out records);
-            CalculateWinningCount(times, records);
+            //CalculateWinningCount(times, records);
+
+            for (int i = 0; i < times.Length; i++)
+            {
+                result *= CalculateCalculateWinningCountWithMath(times[i], records[i]);
+            }
 
             Console.WriteLine(result);
+
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
         }
 
