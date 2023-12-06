@@ -9,7 +9,7 @@ namespace Joymg.AoC23.Day6
     {
         static string[] inputs;
         const string inputFolderPath = "..\\..\\..\\Day6_WaitForIt_AoC_23\\Input\\";
-        static int result = 1 ;
+        static int result = 1;
 
         static void Main(string[] args)
         {
@@ -19,12 +19,13 @@ namespace Joymg.AoC23.Day6
 
             long[] times, records;
             ParseTimeAndRecords(inputs, out times, out records);
-            CalculateWinningCount(times, records);
+            //CalculateWinningCount(times, records);
 
+            result = CalculateCalculateWinningCountWithMath(times[0], records[0]);
 
             Console.WriteLine(result);
             sw.Stop();
-            Console.WriteLine(sw.Elapsed);
+            Console.WriteLine(sw.ElapsedMilliseconds);
 
         }
 
@@ -78,6 +79,27 @@ namespace Joymg.AoC23.Day6
         {
             times = new long[] { long.Parse(String.Join("", RemoveHeader(inputs[0]).Split(" ").Where(x => !string.IsNullOrEmpty(x)))) };
             records = new long[] { long.Parse(String.Join("", RemoveHeader(inputs[1]).Split(" ").Where(x => !string.IsNullOrEmpty(x)))) };
+        }
+
+        public static int CalculateCalculateWinningCountWithMath(long time, long record)
+        {
+
+            // Distance =  chargeTime * (totalTime  -  chargeTime)
+            //         =   chargeTime *  totalTime   -  chargeTime  *  chargeTime
+            //         = -(chargeTime *  chargeTime) +  chargeTime  *  totalTime
+            // Record  = -(chargeTime *  chargeTime) +  chargeTime  *  totalTime
+            // 0       = -(chargeTime *  chargeTime) +  chargeTime  *  totalTime - Record
+
+            int a = 1;
+            long b = -time;
+            long c = record;
+            long delta = b * b - 4 * a * c;
+            float squareRoot = MathF.Sqrt(delta);
+            float x1 = (b - squareRoot) / 2 * a;
+            float x2 = (b + squareRoot) / 2 * a;
+
+            return (int)(x2 - x1);
+
         }
 
     }
