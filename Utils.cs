@@ -51,5 +51,13 @@ namespace Joymg.AoC23
             }
             return  selectedInput + ".txt";
         }
+
+        public static string RemoveHeader(string line)
+        {
+            string[] splitLine = line.Split(':');
+            while (splitLine[1].StartsWith(" "))
+                splitLine[1]= splitLine[1].Remove(0, 1);
+            return splitLine[1];
+        }
     }
 }

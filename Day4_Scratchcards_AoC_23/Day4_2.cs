@@ -4,7 +4,7 @@ using static Joymg.AoC23.Day4.Day4_1;
 
 namespace Joymg.AoC23.Day4
 {
-    internal class Day4_2
+    internal class Day5_2
     {
         static string[] inputs;
         const string inputFolderPath = "..\\..\\..\\Day4_Scratchcards_AoC_23\\Input\\";
