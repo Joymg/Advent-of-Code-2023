@@ -71,6 +71,15 @@
     <td class="tg-0pky">✅</td>
     <td class="tg-0pky">00000013 ms</td>
   </tr>
+  <tr>
+    <td class="tg-0pky">Day 7: Camel Cards</td>
+    <td class="tg-0pky">251058093</td>
+    <td class="tg-0pky">✅</td>
+    <td class="tg-0pky">00000019 ms</td>
+    <td class="tg-0pky">249781879</td>
+    <td class="tg-0pky">✅</td>
+    <td class="tg-0pky">00000025 ms</td>
+  </tr>
 </tbody>
 </table>
 
