@@ -80,6 +80,15 @@
     <td class="tg-0pky">✅</td>
     <td class="tg-0pky">00000025 ms</td>
   </tr>
+  <tr>
+    <td class="tg-0pky">Day 8: Haunted Wasteland</td>
+    <td class="tg-0pky">14893</td>
+    <td class="tg-0pky">✅</td>
+    <td class="tg-0pky">00000014 ms</td>
+    <td class="tg-0pky">10241191004509</td>
+    <td class="tg-0pky">✅</td>
+    <td class="tg-0pky">00000017 ms</td>
+  </tr>
 </tbody>
 </table>
 
