@@ -95,12 +95,21 @@
     <td>✅</td>
     <td>00000012 ms</td>
   </tr>
-<tr>
+  <tr>
     <td>Day 10: Pipe Maze</td>
     <td>6882</td>
     <td>✅</td>
     <td>00000013 ms</td>
     <td colspan="3">❌</td>
+  </tr>
+<tr>
+    <td>Day 11: Cosmic Expansion</td>
+    <td>10077850</td>
+    <td>✅</td>
+    <td>00000010 ms</td>
+    <td>504715068438</td>
+    <td>✅</td>
+    <td>00000011 ms</td>
   </tr>
 </tbody>
 </table>
