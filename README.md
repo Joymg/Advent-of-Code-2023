@@ -119,5 +119,12 @@
     <td colspan="3">❌</td>
   </tr>
 </tbody>
+<td>Day 13: Point of Incidence</td>
+    <td>27664</td>
+    <td>✅</td>
+    <td>00000009 ms</td>
+    <td>33991</td>
+    <td>✅</td>
+    <td>0000008 ms</td>
 </table>
 
