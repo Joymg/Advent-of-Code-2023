@@ -2,7 +2,7 @@
 
 public static class Startup
 {
-    private const int DayToSetup = 13;
+    private const int DayToSetup = 14;
 
     public static void RunDay1()
     {
@@ -65,6 +65,11 @@ public static class Startup
     private static void CopyClassSource(string sourceClass, string targetClass, string sourceClassFilePath,
         string targetClassFilePath)
     {
+        if (File.Exists(targetClassFilePath))
+        {
+            return;
+        }
+
         var lines = File.ReadAllLines(sourceClassFilePath).ToList();
         lines = lines.Select(x =>
         {
@@ -76,7 +81,11 @@ public static class Startup
 
     private static void DownloadInput(string day, string aocYear)
     {
-        DownloadInput(day, aocYear, $"../../../Puzzles/{day}/input.txt", "input");
+        string filePath = $"../../../Puzzles/{day}/input.txt";
+        if (!File.Exists(filePath))
+        {
+            DownloadInput(day, aocYear, filePath, "input");
+        }
     }
 
     private static void DownloadInput(string day, string aocYear, string filePath, string inputSubPath)

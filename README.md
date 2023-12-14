@@ -102,7 +102,7 @@
     <td>00000013 ms</td>
     <td colspan="3">❌</td>
   </tr>
-<tr>
+  <tr>
     <td>Day 11: Cosmic Expansion</td>
     <td>10077850</td>
     <td>✅</td>
@@ -118,13 +118,24 @@
     <td>00057008 ms</td>
     <td colspan="3">❌</td>
   </tr>
-</tbody>
-<td>Day 13: Point of Incidence</td>
+  <tr>
+    <td>Day 13: Point of Incidence</td>
     <td>27664</td>
     <td>✅</td>
     <td>00000009 ms</td>
     <td>33991</td>
     <td>✅</td>
     <td>0000008 ms</td>
+ </tr>
+  <tr>
+    <td>Day 14: Parabolic Reflector Dish</td>
+    <td>106990</td>
+    <td>✅</td>
+    <td>00000012 ms</td>
+    <td>100531</td>
+    <td>✅</td>
+    <td>0000838 ms</td>
+  </tr>  
+</tbody>
 </table>
 

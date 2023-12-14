@@ -5,7 +5,7 @@ namespace Joymg.AoC23;
 public static class App
 {
     public static string AOC_YEAR = "2023";
-    public static Puzzle puzzle = new Day13Part2();
+    public static Puzzle puzzle = new Day14Part2();
 
     static void Main(string[] args)
     {
