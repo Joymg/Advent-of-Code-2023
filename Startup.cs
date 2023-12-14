@@ -62,7 +62,8 @@ public static class Startup
         CopyClassSource(sourceClass, targetClass, sourceClassFilePath, targetClassFilePath);
     }
 
-    private static void CopyClassSource(string sourceClass, string targetClass, string sourceClassFilePath, string targetClassFilePath)
+    private static void CopyClassSource(string sourceClass, string targetClass, string sourceClassFilePath,
+        string targetClassFilePath)
     {
         var lines = File.ReadAllLines(sourceClassFilePath).ToList();
         lines = lines.Select(x =>
@@ -113,12 +114,13 @@ public static class Startup
         }
     }
 
-    private static void CreateIfDontExist(string filepath)
+    public static void CreateIfDontExist(string filepath)
     {
-        bool file = File.Exists(filepath);
-        if (!file)
+        bool exists = File.Exists(filepath);
+        if (!exists)
         {
-            File.Create(filepath);
+            var file = File.Create(filepath);
+            file.Close();
         }
     }
 }

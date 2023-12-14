@@ -13,9 +13,9 @@ public abstract class Puzzle
     public Puzzle()
     {
         string data = GetType().Name;
-        string[] splitData = data.Split('_');
-        day = splitData[0].Remove(0, 3);
-        part = splitData[1];
+        day = new string(data).Remove(5, 5).Remove(0, 3);
+        part = new string(data).Remove(0, 9);
+        stopwatch = new Stopwatch();
     }
 
 
@@ -23,12 +23,14 @@ public abstract class Puzzle
 
     public string SolveInput()
     {
-        return SolveFile(File.ReadAllLines($@"..\..\..\{day}\input.txt"));
+        var path = $"..\\..\\..\\Puzzles\\{day}\\input.txt";
+        return SolveFile(File.ReadAllLines(path));
     }
 
     public string SolveExample()
     {
-        return SolveFile(File.ReadAllLines($@"..\..\..\{day}\example.in.txt"));
+        var path = $"..\\..\\..\\Puzzles\\{day}\\example.in1.txt";
+        return SolveFile(File.ReadAllLines(path));
     }
 }
 
