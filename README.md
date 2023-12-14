@@ -111,6 +111,13 @@
     <td>✅</td>
     <td>00000011 ms</td>
   </tr>
+  <tr>
+    <td>Day 12: Hot Springs</td>
+    <td>7032</td>
+    <td>✅</td>
+    <td>00057008 ms</td>
+    <td colspan="3">❌</td>
+  </tr>
 </tbody>
 </table>
 
